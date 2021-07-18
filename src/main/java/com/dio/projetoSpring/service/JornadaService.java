@@ -15,6 +15,7 @@ public class JornadaService {
 
     @Autowired //Constructor
     public JornadaService(JornadaRepository jornadaRepository)
+
     {
         this.jornadaRepository = jornadaRepository;
     }
@@ -45,7 +46,6 @@ public class JornadaService {
 
     //Method Delete For Drop Specific Reg in DB
     public void deleteJornada(Long idjornada){
-        System.out.println(idjornada);
         try {
            jornadaRepository.deleteById(idjornada);
        }catch (Exception e){
