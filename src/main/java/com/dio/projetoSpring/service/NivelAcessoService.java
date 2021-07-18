@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class NivelAcessoService {
@@ -25,8 +26,8 @@ public class NivelAcessoService {
     }
 
     //For Method specific find id
-    public NivelAcesso findid(Long id){
-        return nivelAcessoRepository.getById(id);
+    public Optional<NivelAcesso> findid(Long id){
+        return nivelAcessoRepository.findById(id);
     }
 
     //For Method Put (update) specific id
