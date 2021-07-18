@@ -32,5 +32,10 @@ public class OcorrenciaController {
         return ocorrenciaService.getById(idOcorrenciaFind);
     }
 
+    @PutMapping
+    public Ocorrencia update(@RequestBody Ocorrencia ocorrencia){
+        return ocorrenciaService.update(ocorrencia);
+    }
+
     
 }
