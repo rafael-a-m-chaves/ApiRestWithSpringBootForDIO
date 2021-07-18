@@ -5,6 +5,7 @@ import org.hibernate.envers.Audited;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Getter
@@ -16,6 +17,7 @@ import javax.persistence.Id;
 @Entity
 public class TipoData {
     @Id
+    @GeneratedValue
     private Long id;
     @Column
     private String descricao;
