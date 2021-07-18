@@ -37,5 +37,8 @@ public class OcorrenciaController {
         return ocorrenciaService.update(ocorrencia);
     }
 
-    
+    @DeleteMapping
+    public void delete(@RequestParam Long idOcorrenciaDel){
+        ocorrenciaService.delete(idOcorrenciaDel);
+    }
 }
