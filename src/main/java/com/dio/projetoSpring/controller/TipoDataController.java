@@ -36,4 +36,9 @@ public class TipoDataController {
     public TipoData update(@RequestBody TipoData tipoData){
         return tipoDataService.update(tipoData);
     }
+
+    @DeleteMapping
+    public void TipoData(@RequestParam long idTipoDelete){
+        tipoDataService.delete(idTipoDelete);
+    }
 }
