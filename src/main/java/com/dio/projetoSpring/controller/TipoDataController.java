@@ -31,4 +31,9 @@ public class TipoDataController {
     {
         return tipoDataService.getById(idTipoData);
     }
+
+    @PutMapping
+    public TipoData update(@RequestBody TipoData tipoData){
+        return tipoDataService.update(tipoData);
+    }
 }
