@@ -1,12 +1,10 @@
 package com.dio.projetoSpring.controller;
-
 import com.dio.projetoSpring.model.TipoData;
 import com.dio.projetoSpring.service.TipoDataService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/tipoData")
@@ -23,5 +21,14 @@ public class TipoDataController {
     @PostMapping
     public TipoData save(@RequestBody TipoData tipoData){
         return tipoDataService.save(tipoData);
+    }
+
+    @GetMapping("/all")
+    public List <TipoData> getTipoDataList(){return tipoDataService.findall();}
+
+    @GetMapping
+    public Optional<TipoData> getTipoDataById(@RequestParam Long idTipoData)
+    {
+        return tipoDataService.getById(idTipoData);
     }
 }
