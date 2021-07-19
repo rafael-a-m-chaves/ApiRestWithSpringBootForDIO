@@ -2,11 +2,9 @@ package com.dio.projetoSpring.model;
 
 import lombok.*;
 import org.hibernate.envers.Audited;
+import org.springframework.data.relational.core.mapping.Column;
 
-import javax.persistence.Embeddable;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -30,8 +28,12 @@ public class BancoHoras {
     }
     @Id
     @EmbeddedId
+    @GeneratedValue
     private BancoHorasId id;
+    @Column
     private LocalDateTime dataTrabalhada;
+    @Column
     private BigDecimal quantidadeHoras;
+    @Column
     private BigDecimal saldoHoras;
 }
