@@ -34,9 +34,7 @@ public class Movimentacao {
     @Column
     private BigDecimal periodo;
     @ManyToOne
-    @Column
     private Ocorrencia ocorrencia;
     @ManyToOne
-    @Column
     private Calendario calendario;
 }
