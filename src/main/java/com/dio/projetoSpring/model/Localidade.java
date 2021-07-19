@@ -3,9 +3,7 @@ package com.dio.projetoSpring.model;
 import lombok.*;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 
 @Getter
@@ -18,8 +16,10 @@ import javax.persistence.ManyToOne;
 
 public class Localidade {
     @Id
+    @GeneratedValue
     private long id;
     @ManyToOne
     private NivelAcesso nivelAcesso;
+    @Column
     private String descricao;
 }
