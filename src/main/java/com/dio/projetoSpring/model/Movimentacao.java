@@ -1,8 +1,6 @@
 package com.dio.projetoSpring.model;
 
 import lombok.*;
-import org.hibernate.envers.Audited;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -27,12 +25,18 @@ public class Movimentacao {
     }
     @Id
     @EmbeddedId
+    @GeneratedValue
     private MovimentacaoId id;
+    @Column
     private LocalDateTime dataEntrada;
+    @Column
     private LocalDateTime dataSaida;
+    @Column
     private BigDecimal periodo;
     @ManyToOne
+    @Column
     private Ocorrencia ocorrencia;
     @ManyToOne
+    @Column
     private Calendario calendario;
 }
