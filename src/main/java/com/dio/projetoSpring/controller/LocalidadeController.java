@@ -1,11 +1,9 @@
 package com.dio.projetoSpring.controller;
 
 import com.dio.projetoSpring.model.Localidade;
-import com.dio.projetoSpring.model.Movimentacao;
 import com.dio.projetoSpring.service.LocalidadeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
