@@ -1,8 +1,119 @@
 *{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(38,80,138);
 }
 
 .conteiner{
-    background-color: rgb(38,80,138);
+    display: flex;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.acessologin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 15%;
+    padding-bottom: 40%;
+    align-content: center;
+}
+
+.tituloacesso{
+    color: rgb(195, 218, 240);
+    font-size: 40px;
+}
+
+.acessoform{
+    flex-direction: column;
+}
+
+.formdispo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 40px;
+    width: 400px;
+    
+}
+
+input:-ms-input-placeholder  {
+    font-size:20px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size:20px;
+  }
+
+  input:-moz-placeholder {
+    font-size:20px;
+  }
+
+/* firefox 19+ */
+  input::-moz-placeholder {
+    font-size:20px;
+  }
+
+.forgetpass{
+    padding-top: 6px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+}
+
+.forgetlink{
+    color: rgb(255, 255, 255);   
+}
+
+.buttonclass{
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(94, 199, 255);
+}
+
+@media (max-width : 1000px) {
+
+    .acessologin{
+        margin-top: 50%;
+    }
+    .login{
+        height: 80px;
+        width: 600px;
+    }
+    input:-ms-input-placeholder  {
+        font-size:30px;
+      }
+    
+      input::-webkit-input-placeholder {
+        font-size:30px;
+      }
+    
+      input:-moz-placeholder {
+        font-size:30px;
+      }
+    
+    /* firefox 19+ */
+      input::-moz-placeholder {
+        font-size:30px;
+      }
+
+      .tituloacesso{
+          font-size: 70px;
+      }
+      .buttonclass{
+          height: 70px;
+      }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Controle de Acesso E Ponto</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
 </head>
 <body>
     <div class="conteiner">
@@ -13,12 +14,15 @@
             </div>
             <div class="acessoform">
                 <form method="post">
-                    <input type="text" class="login" name="login" placeholder="Nº Registro">
-                    <input type="password" class="login" name="password" placeholder="Password">
-                    <div class="forgetpass">
-                        <a href="#" class="forgetlink"></a>
+                    <div class="formdispo">
+                        <input type="text" class="login" name="login" placeholder="Nº Registro">
+                        <input type="password" class="login" name="password" placeholder="Password">
+                        <div class="forgetpass">
+                            <a href="#" class="forgetlink">Forget Password</a>
+                        </div>
+                        <input type="submit" class="buttonclass">
+
                     </div>
-                    <button type="button" onclick="submit">Sing-in</button>
                 </form>
             </div>
         </div>
