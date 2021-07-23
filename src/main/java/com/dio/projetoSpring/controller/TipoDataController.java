@@ -1,4 +1,5 @@
 package com.dio.projetoSpring.controller;
+
 import com.dio.projetoSpring.model.TipoData;
 import com.dio.projetoSpring.service.TipoDataService;
 import org.springframework.beans.factory.annotation.Autowired;

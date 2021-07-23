@@ -17,6 +17,7 @@ public class TipoData {
     @Id
     @GeneratedValue
     private Long id;
+
     @Column
     private String descricao;
 }
