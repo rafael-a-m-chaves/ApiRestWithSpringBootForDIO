@@ -1,1 +1,1 @@
-INSERT INTO TIPO_DATA (ID,DESCRICAO) VALUES ("1","Dia Util"),("2","Feriado");
+INSERT INTO TIPO_DATA (ID,DESCRICAO) VALUES ("1","Dia Util"),("2","Feriado"),("3","Final de Semana"),("4","Feriado Regional");
