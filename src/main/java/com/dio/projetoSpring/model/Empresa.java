@@ -13,7 +13,6 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-
 public class Empresa {
     @Id
     @GeneratedValue

@@ -14,7 +14,6 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-
 public class Ocorrencia {
     @Id
     @GeneratedValue

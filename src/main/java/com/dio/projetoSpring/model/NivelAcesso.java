@@ -15,7 +15,6 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-
 public class NivelAcesso {
      @Id
      @GeneratedValue

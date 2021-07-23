@@ -36,10 +36,8 @@ public class Usuario {
     @Column
     private BigDecimal tolerancia;
     @Column
-    @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime inicioJornada;
     @Column
-    @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime finalJornada;
 
 }

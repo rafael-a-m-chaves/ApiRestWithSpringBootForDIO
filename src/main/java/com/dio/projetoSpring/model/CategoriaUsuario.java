@@ -14,7 +14,6 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-
 public class CategoriaUsuario {
     @Id
     @GeneratedValue

@@ -10,7 +10,6 @@ import javax.persistence.*;
 @EqualsAndHashCode
 @Builder
 @Entity
-
 public class JornadaTrabalho {
     @Id
     @Column

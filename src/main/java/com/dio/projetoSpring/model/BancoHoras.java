@@ -30,7 +30,6 @@ public class BancoHoras {
     @GeneratedValue
     private BancoHorasId id;
     @Column
-    @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime dataTrabalhada;
     @Column
     private BigDecimal quantidadeHoras;

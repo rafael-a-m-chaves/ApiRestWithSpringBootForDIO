@@ -24,6 +24,5 @@ public class Calendario {
     @Column
     private String descricao;
     @Column
-    @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime dataEspecial;
 }
