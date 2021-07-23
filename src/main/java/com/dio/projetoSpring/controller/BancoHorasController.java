@@ -1,11 +1,9 @@
 package com.dio.projetoSpring.controller;
 
 import com.dio.projetoSpring.model.BancoHoras;
-import com.dio.projetoSpring.model.Calendario;
 import com.dio.projetoSpring.service.BancoHorasService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 

@@ -1,9 +1,6 @@
 package com.dio.projetoSpring.model;
 
 import lombok.*;
-import org.hibernate.envers.Audited;
-
-
 import javax.persistence.*;
 
 @Getter

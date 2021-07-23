@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode
 @Builder
 @Entity
-
 public class Movimentacao {
     @AllArgsConstructor
     @NoArgsConstructor
