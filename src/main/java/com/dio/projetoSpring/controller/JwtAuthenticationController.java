@@ -1,4 +1,4 @@
-package com.dio.projetoSpring.configJWT;
+package com.dio.projetoSpring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
