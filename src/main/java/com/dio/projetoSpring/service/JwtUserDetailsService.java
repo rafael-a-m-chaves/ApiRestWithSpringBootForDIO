@@ -2,7 +2,6 @@ package com.dio.projetoSpring.service;
 
 import java.util.ArrayList;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -12,18 +11,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class JwtUserDetailsService implements UserDetailsService {
 
-    @Autowired
-    private UserService userService;
-
     @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        com.bootstrap.springboot.model.User user = userService.getByEmail(email);
-
-        if (user.getEmail().equals(email)) {
-            return new User(email, user.getPassword(),
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        if ("springuser".equals(username)) {
+            return new User("springuser", "$2a$10$slYQmyNdGzTn7ZLBXBChFOC9f6kFjAqPhccnP6DxlWXx2lPk1C3G6",
                     new ArrayList<>());
         } else {
-            throw new UsernameNotFoundException("User not found with email: " + email);
+            throw new UsernameNotFoundException("User not found with username: " + username);
         }
     }
+
 }
