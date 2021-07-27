@@ -1,4 +1,3 @@
-
 function enviar2(){
     var user = document.getElementById("username");
     var pass = document.getElementById("password")
