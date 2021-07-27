@@ -42,6 +42,6 @@ public class JornadaTrabalhoController {
     public void deleteJornada(@RequestParam Long idJornadaDel) {
         jornadaService.deleteJornada(idJornadaDel);
     }
-
+//"Authorization": "Bearer "
 
 }
