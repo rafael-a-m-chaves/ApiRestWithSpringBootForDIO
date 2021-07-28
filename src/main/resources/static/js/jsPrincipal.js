@@ -11,7 +11,6 @@ function enviar2(){
         })
         .then((response) => response.json())
         .then((data1) => {
-            console.log("Success:", data1);
             window.localStorage.setItem('token',data1.token);
             return redirecionar();
         })
@@ -21,16 +20,20 @@ function enviar2(){
 
 }
 function redirecionar(){
-    fetch("/tipodata/all", {
+    fetch("/hub", {
         method: "GET",
         headers: {
         "Content-Type": "application/json",
         "Authorization": "Bearer " + window.localStorage.getItem('token'),
         },
         })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log("Success:", data);
+        .then((response) => {
+            let reader = response.body.getReader();
+            reader.read().then(function(data){  
+                document.open();
+                document.write(String.fromCharCode.apply(null, data.value));
+            });
+            
         })
         .catch((error) => {
             console.error("Error:", error);
