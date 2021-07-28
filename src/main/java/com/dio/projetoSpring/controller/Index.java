@@ -11,4 +11,6 @@ public class Index {
         return "index";
     }
 
+    @RequestMapping("/hub")
+    public String hub(){return "hub";}
 }
