@@ -85,6 +85,14 @@ input:-ms-input-placeholder  {
     background-color: rgb(94, 199, 255);
 }
 
+.lblErrorUserPass{
+  color: red;
+  margin-right: 30%;
+  font-size: 25px;
+  display: none;
+}
+
+
 @media (max-width : 1000px) {
 
     .acessologin{
@@ -118,3 +126,4 @@ input:-ms-input-placeholder  {
           height: 70px;
       }
 }
+

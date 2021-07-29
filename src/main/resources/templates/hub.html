@@ -5,47 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/hub.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/hub.css">
     <script type="text/javascript" lang="javascript" src="js/jquery-1.3.2.min.js"></script>
     <title>HUB</title>
 
 </head>
-<body>
+<body onload="redirecionar()">
     <div class="conteiner">
         
         <div class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Pedidos</a>
+            <a class="linknav" href="#">Inicio</a>
+            <a class="linknav" href="#">Pedidos</a>
         </div>
-        
-        <div class="columL">
-            <div class="entrada">
-
-            </div>
-            <div class="horastrabalhada">
-
-            </div>
-            <div class="bancodehoras">
-
-            </div>
-        </div>
-
-        <div class="columM">
-            <div class="areadeacesso">
-
-            </div>
-            <div class="finalizarjornada">
-
-            </div>
-        </div>
-
-        <div class="columR">
-            <div class="chamados">
-
-            </div>
-            <div class="informacoesimportantes" >
-
+        <div class="boxColum">
+            <div class="columL">
+                <div class="entrada">
+                    <h2 class="titlecolumL">
+                        Hora De Entrada
+                    </h2>
+                </div>
+                <div class="horastrabalhada">
+                    <h2 class="titlecolumL">
+                        Horas Trabalhadas
+                    </h2>
+                </div>
+                <div class="bancodehoras">
+                        <h2 class="titlecolumL">
+                            Horas Extras
+                        </h2>
+                </div>
             </div>
 
+            <div class="columM">
+                <div class="areadeacesso">
+                    <div class="divTitleCentral">
+                        <h2 class="titleCentral">
+                            Áreas Liberadas Para Acesso
+                        </h2>
+                    </div>
+                    <div class="mostraAcesso" id="mostraAcesso">
+
+                    </div>
+                </div>
+                <div class="finalizarjornada">
+                    <button class="btnAlmoco">
+                        Ponto para Almoço
+                    </button>
+                    <button class="btnEncerraJornada">
+                        Encerrar Jornada
+                    </button>
+                </div>
+            </div>
+
+            <div class="columR">
+                <div class="chamados">
+                    <h2 class="titleColumR">
+                        Chamados
+                    </h2>
+                </div>
+                <div class="informacoesimportantes" >
+                    <h2 class="titleColumR">
+                        Informações
+                    </h2>
+                </div>
+
+            </div>
         </div>
     </div>
     <script type="text/javascript" lang="javascript" src="js/jsPrincipal.js"></script>
